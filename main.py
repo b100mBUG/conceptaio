@@ -12,7 +12,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import rio
+import rio, os
 
 from app_state import AppState, ThemeSettings
 from components.footer import Footer
