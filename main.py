@@ -73,4 +73,9 @@ app = rio.App(
 
 
 if __name__ == "__main__":
-    app.run_in_browser()
+    port = int(os.environ.get("PORT", 8000))
+    app.run_as_web_server(
+        host="0.0.0.0",
+        port=port,
+        quiet=True,
+    )
